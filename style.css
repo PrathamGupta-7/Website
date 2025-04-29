@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  scroll-behavior: smooth;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1617531653313-5d92dfedeb2e?auto=format&fit=crop&w=2100&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #00ffcc;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00ffcc;
+}
+.hero-text h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+}
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.btn {
+  padding: 0.8em 2em;
+  background: #00ffcc;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #00ccaa;
+}
+.section {
+  padding: 5em 2em;
+  text-align: center;
+}
+.models .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.card {
+  background: #111;
+  padding: 2em;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ffcc;
+}
+.features-list {
+  list-style: none;
+  margin-top: 2em;
+}
+.features-list li {
+  margin: 1em 0;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+.member {
+  background: #111;
+  padding: 2em;
+  border-radius: 12px;
+  width: 200px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto;
+}
+.contact input, .contact textarea {
+  padding: 1em;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+}
+.contact button {
+  padding: 1em;
+  background: #00ffcc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  padding: 2em;
+  text-align: center;
+  background: #111;
+}
+.contact-info {
+  margin-top: 2em;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.contact-info a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #00ccaa;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.social-media ul li a {
+  font-size: 1.2em;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+  color: #00ffcc;
+}
+.team-members .member {
+  background: #111;
+  padding: 2em;
+  border-radius: 12px;
+  width: 400px; /* Increase width for larger cards */
+  text-align: center;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-img {
+  width: 300px; /* Adjust width to make the image larger */
+  height: 300px; /* Keep height equal to width for a perfect circle */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 1.5em;
+  object-fit: cover; /* Ensures the image fills the circle */
+  transition: transform 0.3s ease; /* Add smooth hover effect */
+  image-rendering: crisp-edges;
+}
+
+.team-img:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
